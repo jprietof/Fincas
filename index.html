@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fincas</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mi finca</title>
+
+  <meta name="author" content="Jorge Acuna">
+
 </head>
+
 <body>
-    
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center">
+          Mi Finca Reto 2
+        </h3>
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="text-center">
+              Crear Finca
+            </h3>
+              <div class="form-group">
+
+                <label for="fincaID">
+                  Creacion de Fincas
+                </label>
+                <input type="number" class="form-control" id="idFinca" placeholder="ID Finca">
+              </div>
+              <div class="form-group">
+
+                <label for="fincaAddress">
+                  Direccion de la finca
+                </label>
+                <input type="text" class="form-control" id="addressFinca" placeholder="Address Finca">
+              </div>
+              <div class="form-group">
+
+                <label for="fincaExension">
+                  Extension de la finca
+                </label>
+                <input type="number" class="form-control" id="exensionFinca" placeholder="Exension Finca">
+              </div>
+              <div class="form-group">
+
+                <label for="fincaCategoryId">
+                  ID de la categoria
+                </label>
+                <input type="number" class="form-control" id="categoryidFinca" placeholder="Category_ID Finca">
+              </div>
+
+              <label for="fincaCategoryId">
+                Nombre
+              </label>
+              <input type="text" class="form-control" id="nombreFinca" placeholder="Name Finca">
+          </div>
+
+          <button onclick=guardarInformacionFinca();>
+            Guardar
+          </button>
+          <button onclick=consultarInformacionFinca();>
+            Consultar Informacion Fincas
+          </button>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="text-center">
+            Registro de Clientes
+          </h3>
+            <div class="form-group">
+
+              <label for="clienteID">
+                Creacion clientes
+              </label>
+              <input type="number" class="form-control" id="idclient" placeholder="ID Client">
+            </div>
+            <div class="form-group">
+
+              <label for="clienteName">
+                Nombre
+              </label>
+              <input type="text" class="form-control" id="nameclient" placeholder="Name Client">
+            </div>
+            <div class="form-group">
+
+              <label for="clienteEmail">
+                Correo
+              </label>
+              <input type="email" class="form-control" id="emailclient" placeholder="Email Client">
+            </div>
+            <div class="form-group">
+
+              <label for="clienteAge">
+                Edad
+              </label>
+              <input type="email" class="form-control" id="ageclient" placeholder="Age Client">
+            </div>
+            <div class="form-group">
+
+              <button onclick="guardarInformacionCliente();" type="button" class="btn btn-primary">
+                Guardar
+              </button>
+          <button onclick="consultarInformacionCliente();" type="button" class="btn btn-success btn-block">
+            Consultar Clientes
+          </button>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="text-center">
+            Crear mensage
+          </h3>
+            <div class="form-group">
+
+              <label for="messageID">
+                Creacion mensaje
+              </label>
+              <input type="number" class="form-control" id="idmessage" placeholder="ID Message">
+            </div>
+            <div class="form-group">
+
+              <label for="messageText">
+                Texto del mensaje
+              </label>
+              <input type="text" class="form-control" id="textmessage" placeholder="text Message">
+            </div>
+            <div class="form-group">
+
+            <button onclick="guardarInformacionMensaje();" type="button" class="btn btn-primary">
+              Guardar
+            </button>
+          <button onclick="consultarInformacionMensaje();" type="button" class="btn btn-success btn-block">
+            Consultar Mensajes
+          </button>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table table-sm">
+            <div id="Tabla1"></div>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-sm">
+            <div id="Tabla2"></div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/funciones.js"></script>
+
 </body>
+
 </html>
