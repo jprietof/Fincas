@@ -233,6 +233,7 @@ function eliminarCliente(idCliente) {
 function guardarInformacionCliente() {
     console.log("Guardar informacion cliente")
     let myData = {
+        id:$("#idclient").val(),
         name: $("#nameclient").val(),
         email: $("#emailclient").val(),
         age: $("#ageclient").val()
@@ -322,6 +323,7 @@ function eliminarMensaje(idMensaje) {
 function guardarInformacionMensaje() {
     console.log("Guardar informacion Mensaje")
     let myData = {
+        id:$("#idmessage").val(),
         messagetext: $("#textmessage").val()
     };
     let dataToSend = JSON.stringify(myData);
